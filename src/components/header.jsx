@@ -3,18 +3,21 @@ import background from '../assets/images/header-background.jpg'
 
 export function Header() {
     const headerStyle = {
-        backgroundColor: "rgba(75, 184, 210, 0.5)",
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: "rgba(50, 121, 141, 0.9)",
         backgroundSize: "100%",
         height: "1080px",
         width: "100%",
         position: "fixed",
         zIndex: "1",
+        fontFamily: "'Raleway', sans-serif",
     };
 
     const mainTitleStyle = {
         color: "#fff",
-        fontSize: "7em",
-        fontWeight: "300",
+        fontSize: "5.5em",
+        fontWeight: "bold",
 
         textAlign: "center",
         alignItems: "flex-end",
@@ -23,7 +26,7 @@ export function Header() {
 
     const subTitleStyle = {
         color: "#363636",
-        fontSize: "2em",
+        fontSize: "1.5em",
         fontWeight: "bold",
 
         alignItems: "flex-start",
@@ -35,7 +38,7 @@ export function Header() {
             <div className="container h-100">
                 <div className="row h-50">
                     <div className="col-sm-12 justify-content-center" style={mainTitleStyle}>
-                        <div>Full Stack Developer</div>
+                        <div>Full Stack Developer.</div>
                     </div>
                 </div>
                 <div className="row h-50">
