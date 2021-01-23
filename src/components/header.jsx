@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../assets/images/h5.jpg'
+import background from '../assets/images/header-background.jpg'
 
 export function Header() {
     const headerStyle = {
@@ -7,7 +7,7 @@ export function Header() {
         backgroundRepeat: 'no-repeat',
         backgroundColor: "rgba(50, 121, 141, 0.9)",
         backgroundSize: "100%",
-        height: "1080px",
+        height: "100%",
         width: "100%",
         position: "fixed",
         zIndex: "1",
