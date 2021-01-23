@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../assets/images/header-background.jpg'
+import background from '../assets/images/h5.jpg'
 
 export function Header() {
     const headerStyle = {
@@ -25,7 +25,7 @@ export function Header() {
     }; 
 
     const subTitleStyle = {
-        color: "#363636",
+        color: "#fff",
         fontSize: "1.5em",
         fontWeight: "bold",
 
