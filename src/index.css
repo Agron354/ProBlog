@@ -1,7 +1,11 @@
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url(./assets/fonts/Raleway-Bold.ttf);
+ }
+
 body {
   margin: 0;
   font-family: 'Raleway-Bold', sans-serif;
-  src: local('Raleway-Bold'), url(./assets/fonts/Raleway-Bold.ttf) format('tff');
   text-align: center;
 }
 
