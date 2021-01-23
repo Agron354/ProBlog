@@ -6,6 +6,7 @@ export function Layout() {
     return (
         <React.Fragment>
             <Header/>
+            <Footer/>
         </React.Fragment>
     );
 } 

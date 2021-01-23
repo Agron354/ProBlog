@@ -12,6 +12,9 @@ export function Header() {
         position: "fixed",
         zIndex: "1",
         fontFamily: "'Raleway', sans-serif",
+        top: "0",
+        left: "0",
+        height: "100vh",
     };
 
     const mainTitleStyle = {
