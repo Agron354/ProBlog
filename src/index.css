@@ -84,6 +84,18 @@ header {
   position: relative;
 }
 
+.main-content-text-title {
+  color: #434343;
+  font-size: 5em;
+  line-height: 0.9em;
+}
+
+.main-content-text {
+  color: #969696;
+  font-family: Arial, Helvetica;
+  font-size: 2em;
+}
+
 .description-background {
   background-size: 110%;
   animation-name: description-appearing;
