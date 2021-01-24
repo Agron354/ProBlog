@@ -1,9 +1,8 @@
 import React from 'react';
 
-export function Footer() {
-
+export function MainContent() {
     return (
-        <footer id="footer">
+        <div className="main-content">
             <div className="container h-50">
                 <div className="row h-50 justify-content-center title second-screen-title-main">
                     <div className="col-sm-12">
@@ -11,6 +10,6 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }

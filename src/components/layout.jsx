@@ -1,12 +1,12 @@
 import React from 'react';
-import { Footer } from './footer';
+import { MainContent } from './mainContent';
 import { Header } from './header';
 
 export function Layout() {
     return (
         <React.Fragment>
             <Header/>
-            <Footer/>
+            <MainContent/>
         </React.Fragment>
     );
 } 

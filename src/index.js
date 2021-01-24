@@ -7,9 +7,6 @@ import ReactDOM from 'react-dom';
 import { Layout } from './components/layout';
 import './index.css';
 
-ReactDOM.render(
-    <React.StrictMode>
-        <Layout/>
-    </React.StrictMode>,
-    document.getElementById('body')
-);
+const content = <React.StrictMode><Layout/></React.StrictMode>;
+
+ReactDOM.render(content ,document.getElementById('root'));

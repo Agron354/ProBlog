@@ -1,9 +1,8 @@
 import React from 'react';
 
 export function Header() {
-
     return (
-        <header id="header">
+        <header className="header">
             <div className="container h-100">
                 <div className="row h-50">
                     <div className="col-sm-12 justify-content-center title first-screen-title-main">

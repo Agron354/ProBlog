@@ -10,6 +10,8 @@ body {
 }
 
 header {
+  animation-name: appearing;
+  animation-duration: 1s;
   background-image: url(./assets/images/header-background.jpg);
   background-repeat: no-repeat;
   background-color: rgba(50, 121, 141, 0.9);
@@ -22,7 +24,7 @@ header {
   z-index: 1;
 }
 
-footer {
+.main-content {
   box-shadow: white 0px 0px 11px;
   background-color: #fff;
   height: 100vh;
@@ -39,11 +41,15 @@ footer {
 }
 
 .first-screen-title-main {
+  animation-name: surfacing;
+  animation-duration: 0.8s;
   font-size: 5.5em;
   align-items: flex-end;
 }
 
 .first-screen-title-sub {
+  animation-name: surfacing;
+  animation-duration: 0.8s;
   font-size: 1.5em;
   align-items: flex-start;
 }
@@ -55,3 +61,22 @@ footer {
   padding-top: 10vh;
 }
 
+@keyframes appearing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes surfacing {
+  from {
+    top: 8vh;
+  }
+
+  to {
+    top: 0vh;
+  }
+}
