@@ -70,16 +70,18 @@ header {
   display: flex;
   background-image: url(./assets/images/vending.jpg);
   background-repeat: no-repeat;
+  background-color: rgba(98, 162, 187, 1);
   background-size: 100%;
   height: 100%;
   position: relative;
 }
 
 .description-background {
-  color: #62a2bb;
+  color: #fff;
+  background-blend-mode: overlay;
 }
 
-.description-background:first-child {
+.description-background .hidden {
   display: flex !important;
 }
 
