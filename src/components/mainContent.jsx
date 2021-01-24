@@ -17,6 +17,8 @@ export function MainContent() {
                     <ProjectItem/>
                 </div>
             </div>
+            <div className="container-fluid h-50">
+            </div>
         </div>
     );
 }

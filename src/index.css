@@ -70,15 +70,25 @@ header {
   display: flex;
   background-image: url(./assets/images/vending.jpg);
   background-repeat: no-repeat;
-  background-color: rgba(98, 162, 187, 1);
   background-size: 100%;
   height: 100%;
   position: relative;
 }
 
 .description-background {
-  color: #fff;
-  background-blend-mode: overlay;
+  background-size: 110%;
+  animation-name: description-appearing;
+  animation-duration: 0.3s;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
+}
+
+.description-background-invisible {
+  background-size: 100%;
+  animation-name: description-disappearing;
+  animation-duration: 0.4s;
+  color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
 }
 
 .description-background .hidden {
@@ -104,3 +114,96 @@ header {
     top: 0vh;
   }
 }
+
+@keyframes description-appearing {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.1), rgba(50, 121, 141, 0.1)), url(./assets/images/vending.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.2), rgba(50, 121, 141, 0.2)), url(./assets/images/vending.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.3), rgba(50, 121, 141, 0.3)), url(./assets/images/vending.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.4), rgba(50, 121, 141, 0.4)), url(./assets/images/vending.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.5), rgba(50, 121, 141, 0.5)), url(./assets/images/vending.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.6), rgba(50, 121, 141, 0.6)), url(./assets/images/vending.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.7), rgba(50, 121, 141, 0.7)), url(./assets/images/vending.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.78), rgba(50, 121, 141, 0.78)), url(./assets/images/vending.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
+  }
+}
+
+@keyframes description-disappearing {
+  0% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.7), rgba(50, 121, 141, 0.7)), url(./assets/images/vending.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.6), rgba(50, 121, 141, 0.6)), url(./assets/images/vending.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.5), rgba(50, 121, 141, 0.5)), url(./assets/images/vending.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.4), rgba(50, 121, 141, 0.4)), url(./assets/images/vending.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.3), rgba(50, 121, 141, 0.3)), url(./assets/images/vending.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.2), rgba(50, 121, 141, 0.2)), url(./assets/images/vending.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.1), rgba(50, 121, 141, 0.1)), url(./assets/images/vending.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(50, 121, 141, 0.02), rgba(50, 121, 141, 0.02)), url(./assets/images/vending.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
+  }
+}
+

@@ -5,7 +5,7 @@ export function ProjectItem() {
 
     return (
         <div 
-            className={`col-5 col-xs-12 m-3 project-img justify-content-center ${descriptionIsVisible ? "description-background" : ""}`}
+            className={`col-5 col-xs-12 m-3 project-img justify-content-center ${descriptionIsVisible ? "description-background" : "description-background-invisible"}`}
             onMouseOver={() => setDescriptionVisibility(true)} 
             onMouseLeave={() => setDescriptionVisibility(false)}>
             <div className="hidden container">
