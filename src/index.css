@@ -14,7 +14,7 @@ header {
   animation-duration: 1s;
   background-image: url(./assets/images/header-background.jpg);
   background-repeat: no-repeat;
-  background-color: rgba(50, 121, 141, 0.9);
+  background-color: rgba(82, 140, 163, 0.9);
   background-size: 100%;
   height: 100vh;
   width: 100%;
@@ -68,11 +68,45 @@ header {
 
 .project-img {
   display: flex;
-  background-image: url(./assets/images/vending.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
   position: relative;
+  animation-name: description-appearing;
+  animation-duration: 0.3s;
+  color: rgba(255, 255, 255, 1);
+}
+
+.vending-img-description {
+  animation-name: vending-description-appearing;
+  animation-duration: 0.3s;
+  background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
+}
+
+.vending-img {
+  animation-name: vending-description-disappearing;
+  animation-duration: 0.4s;
+  background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
+}
+
+.document-editing-img-description {
+  animation-name: document-editing-description-appearing;
+  animation-duration: 0.3s;
+  background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
+}
+
+.document-editing-img {
+  animation-name: document-editing-description-disappearing;
+  animation-duration: 0.4s;
+  background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
+}
+
+.car-management-img {
+  background-image: url(./assets/images/document-editing.jpg);
+}
+
+.vacation-management-img {
+  background-image: url(./assets/images/document-editing.jpg);
 }
 
 .main-content-img {
@@ -96,24 +130,13 @@ header {
   font-size: 2em;
 }
 
-.description-background {
-  background-size: 110%;
+.vending-img-description .hidden,
+.document-editing-img-description .hidden,
+.car-management-img-description .hidden,
+.vacation-management-img-description .hidden {
+  display: flex !important;
   animation-name: description-appearing;
   animation-duration: 0.3s;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
-}
-
-.description-background-invisible {
-  background-size: 100%;
-  animation-name: description-disappearing;
-  animation-duration: 0.4s;
-  color: rgba(255, 255, 255, 0);
-  background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
-}
-
-.description-background .hidden {
-  display: flex !important;
 }
 
 @keyframes appearing {
@@ -137,94 +160,192 @@ header {
 }
 
 @keyframes description-appearing {
-  0% {
+  from {
     color: rgba(255, 255, 255, 0);
     background-size: 100%;
-    background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
   }
-
-  12% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.1), rgba(50, 121, 141, 0.1)), url(./assets/images/vending.jpg);
-  }
-
-  24% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.2), rgba(50, 121, 141, 0.2)), url(./assets/images/vending.jpg);
-  }
-
-  36% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.3), rgba(50, 121, 141, 0.3)), url(./assets/images/vending.jpg);
-  }
-
-  48% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.4), rgba(50, 121, 141, 0.4)), url(./assets/images/vending.jpg);
-  }
-
-  60% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.5), rgba(50, 121, 141, 0.5)), url(./assets/images/vending.jpg);
-  }
-
-  72% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.6), rgba(50, 121, 141, 0.6)), url(./assets/images/vending.jpg);
-  }
-
-  84% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.7), rgba(50, 121, 141, 0.7)), url(./assets/images/vending.jpg);
-  }
-
-  96% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.78), rgba(50, 121, 141, 0.78)), url(./assets/images/vending.jpg);
-  }
-
-  100% {
+  to {
     color: rgba(255, 255, 255, 1);
     background-size: 110%;
-    background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
   }
 }
 
 @keyframes description-disappearing {
-  0% {
+  from {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+  }
+  to {
     color: rgba(255, 255, 255, 1);
     background-size: 110%;
-    background-image: linear-gradient(rgba(50, 121, 141, 0.8), rgba(50, 121, 141, 0.8)), url(./assets/images/vending.jpg);
+  }
+}
+
+@keyframes vending-description-appearing {
+  0% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
   }
 
   12% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.7), rgba(50, 121, 141, 0.7)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/vending.jpg);
   }
 
   24% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.6), rgba(50, 121, 141, 0.6)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/vending.jpg);
   }
 
   36% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.5), rgba(50, 121, 141, 0.5)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/vending.jpg);
   }
 
   48% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.4), rgba(50, 121, 141, 0.4)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/vending.jpg);
   }
 
   60% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.3), rgba(50, 121, 141, 0.3)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/vending.jpg);
   }
 
   72% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.2), rgba(50, 121, 141, 0.2)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/vending.jpg);
   }
 
   84% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.1), rgba(50, 121, 141, 0.1)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/vending.jpg);
   }
 
   96% {
-    background-image: linear-gradient(rgba(50, 121, 141, 0.02), rgba(50, 121, 141, 0.02)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.78), rgba(82, 140, 163, 0.78)), url(./assets/images/vending.jpg);
   }
 
   100% {
-    color: rgba(255, 255, 255, 0);
-    background-size: 100%;
-    background-image: linear-gradient(rgba(50, 121, 141, 0), rgba(50, 121, 141, 0)), url(./assets/images/vending.jpg);
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
+  }
+}
+
+@keyframes vending-description-disappearing {
+  0% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/vending.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/vending.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/vending.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/vending.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/vending.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/vending.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/vending.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.02), rgba(82, 140, 163, 0.02)), url(./assets/images/vending.jpg);
+  }
+
+  100% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
+  }
+}
+
+@keyframes document-editing-description-appearing {
+  0% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/document-editing.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/document-editing.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/document-editing.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/document-editing.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/document-editing.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/document-editing.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/document-editing.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.78), rgba(82, 140, 163, 0.78)), url(./assets/images/document-editing.jpg);
+  }
+
+  100% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
+  }
+}
+
+@keyframes document-editing-description-disappearing {
+  0% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/document-editing.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/document-editing.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/document-editing.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/document-editing.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/document-editing.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/document-editing.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/document-editing.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.02), rgba(82, 140, 163, 0.02)), url(./assets/images/document-editing.jpg);
+  }
+
+  100% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
   }
 }
 

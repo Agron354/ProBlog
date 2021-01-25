@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProjectItem } from './projectItem';
+import { projectsData } from '../constants/projectsData';
 
 export function MainContent() {
     return (
@@ -11,10 +12,7 @@ export function MainContent() {
                     </div>
                 </div>
                 <div className="row justify-content-center" style={{height: "50vh"}}>
-                    <ProjectItem/>
-                    <ProjectItem/>
-                    <ProjectItem/>
-                    <ProjectItem/>
+                    {projectsData.map((el, index) => <ProjectItem title={el.title} description={el.description} imageClass={el.imageClass}/>)}
                 </div>
             </div>
             <div className="container-fluid" style={{height: "40%"}}>
