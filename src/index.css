@@ -63,7 +63,7 @@ header {
   font-size: 4em;
   line-height: 0.8rem;
   padding-top: 10vh;
-  padding-bottom: 7vh;
+  padding-bottom: 10vh;
 }
 
 .project-img {
@@ -103,12 +103,32 @@ header {
   background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
 }
 
+.car-management-img-description {
+  animation-name: car-management-description-appearing;
+  animation-duration: 0.3s;
+  background-size: 110%;
+  background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/car-management.jpg);
+}
+
 .car-management-img {
-  background-image: url(./assets/images/document-editing.jpg);
+  animation-name: car-management-description-disappearing;
+  animation-duration: 0.4s;
+  background-size: cover;
+  background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/car-management.jpg);
+}
+
+.vacation-management-img-description {
+  animation-name: vacation-management-description-appearing;
+  animation-duration: 0.3s;
+  background-size: 110%;
+  background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vacation-management.jpg);
 }
 
 .vacation-management-img {
-  background-image: url(./assets/images/document-editing.jpg);
+  animation-name: vacation-management-description-disappearing;
+  animation-duration: 0.4s;
+  background-size: cover;
+  background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vacation-management.jpg);
 }
 
 .main-content-img {
@@ -376,3 +396,186 @@ header {
   }
 }
 
+@keyframes car-management-description-appearing {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/car-management.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/car-management.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/car-management.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/car-management.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/car-management.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/car-management.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/car-management.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/car-management.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.78), rgba(82, 140, 163, 0.78)), url(./assets/images/car-management.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/car-management.jpg);
+  }
+}
+
+@keyframes car-management-description-disappearing {
+  0% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/car-management.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/car-management.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/car-management.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/car-management.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/car-management.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/car-management.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/car-management.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/car-management.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.02), rgba(82, 140, 163, 0.02)), url(./assets/images/car-management.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/car-management.jpg);
+  }
+}
+
+@keyframes vacation-management-description-appearing {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vacation-management.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/vacation-management.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/vacation-management.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/vacation-management.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/vacation-management.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/vacation-management.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/vacation-management.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/vacation-management.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.78), rgba(82, 140, 163, 0.78)), url(./assets/images/vacation-management.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vacation-management.jpg);
+  }
+}
+
+@keyframes vacation-management-description-disappearing {
+  0% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vacation-management.jpg);
+  }
+
+  12% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.7), rgba(82, 140, 163, 0.7)), url(./assets/images/vacation-management.jpg);
+  }
+
+  24% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.6), rgba(82, 140, 163, 0.6)), url(./assets/images/vacation-management.jpg);
+  }
+
+  36% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.5), rgba(82, 140, 163, 0.5)), url(./assets/images/vacation-management.jpg);
+  }
+
+  48% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.4), rgba(82, 140, 163, 0.4)), url(./assets/images/vacation-management.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.3), rgba(82, 140, 163, 0.3)), url(./assets/images/vacation-management.jpg);
+  }
+
+  72% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.2), rgba(82, 140, 163, 0.2)), url(./assets/images/vacation-management.jpg);
+  }
+
+  84% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.1), rgba(82, 140, 163, 0.1)), url(./assets/images/vacation-management.jpg);
+  }
+
+  96% {
+    background-image: linear-gradient(rgba(82, 140, 163, 0.02), rgba(82, 140, 163, 0.02)), url(./assets/images/vacation-management.jpg);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vacation-management.jpg);
+  }
+}

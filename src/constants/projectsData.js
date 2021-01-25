@@ -23,7 +23,7 @@ export const projectsData = [
             Services are meant for tracking clients car storage, where they could always know all data about their cars,
             including statistics, travel routes, time. etc.
         `,
-        imageClass: "vending-img",
+        imageClass: "car-management-img",
     },
     {
         title: "Vacation management system",
@@ -32,6 +32,6 @@ export const projectsData = [
             management of departments, users and their vacations. It’s available to view statistics about
             vacations and it’s periods. The system supports localization.
         `,
-        imageClass: "vending-img",
+        imageClass: "vacation-management-img",
     },
 ];
