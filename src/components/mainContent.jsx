@@ -12,7 +12,16 @@ export function MainContent() {
                     </div>
                 </div>
                 <div className="row justify-content-center" style={{height: "50vh"}}>
-                    {projectsData.map((el, index) => <ProjectItem title={el.title} description={el.description} imageClass={el.imageClass}/>)}
+                    {
+                        projectsData.map((el, index) => 
+                            <ProjectItem 
+                                key={index} 
+                                title={el.title} 
+                                description={el.description}
+                                imageClass={el.imageClass}>
+                            </ProjectItem>
+                        )
+                    }
                 </div>
             </div>
             <div className="container-fluid" style={{height: "40%"}}>

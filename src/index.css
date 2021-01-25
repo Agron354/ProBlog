@@ -69,22 +69,22 @@ header {
 .project-img {
   display: flex;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100%;
   position: relative;
-  animation-name: description-appearing;
-  animation-duration: 0.3s;
   color: rgba(255, 255, 255, 1);
 }
 
 .vending-img-description {
   animation-name: vending-description-appearing;
   animation-duration: 0.3s;
+  background-size: 110%;
   background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
 }
 
 .vending-img {
   animation-name: vending-description-disappearing;
+  background-size: cover;
   animation-duration: 0.4s;
   background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
 }
@@ -92,12 +92,14 @@ header {
 .document-editing-img-description {
   animation-name: document-editing-description-appearing;
   animation-duration: 0.3s;
+  background-size: 110%;
   background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
 }
 
 .document-editing-img {
   animation-name: document-editing-description-disappearing;
   animation-duration: 0.4s;
+  background-size: cover;
   background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
 }
 
@@ -139,6 +141,15 @@ header {
   animation-duration: 0.3s;
 }
 
+.vending-img .hidden,
+.document-editing-img .hidden,
+.car-management-img .hidden,
+.vacation-management-img .hidden {
+  display: none !important;
+  animation-name: description-disappearing;
+  animation-duration: 0.3s;
+}
+
 @keyframes appearing {
   from {
     opacity: 0;
@@ -172,17 +183,19 @@ header {
 
 @keyframes description-disappearing {
   from {
-    color: rgba(255, 255, 255, 0);
-    background-size: 100%;
-  }
-  to {
     color: rgba(255, 255, 255, 1);
     background-size: 110%;
+  }
+  to {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
   }
 }
 
 @keyframes vending-description-appearing {
   0% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
     background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
   }
 
@@ -219,12 +232,16 @@ header {
   }
 
   100% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
     background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
   }
 }
 
 @keyframes vending-description-disappearing {
   0% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
     background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/vending.jpg);
   }
 
@@ -261,12 +278,16 @@ header {
   }
 
   100% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
     background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vending.jpg);
   }
 }
 
 @keyframes document-editing-description-appearing {
   0% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
     background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
   }
 
@@ -303,12 +324,16 @@ header {
   }
 
   100% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
     background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
   }
 }
 
 @keyframes document-editing-description-disappearing {
   0% {
+    color: rgba(255, 255, 255, 1);
+    background-size: 110%;
     background-image: linear-gradient(rgba(82, 140, 163, 0.8), rgba(82, 140, 163, 0.8)), url(./assets/images/document-editing.jpg);
   }
 
@@ -345,6 +370,8 @@ header {
   }
 
   100% {
+    color: rgba(255, 255, 255, 0);
+    background-size: 100%;
     background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/document-editing.jpg);
   }
 }
