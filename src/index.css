@@ -47,6 +47,7 @@ footer {
 }
 
 footer h1, footer h2 {
+  display: flex;
   font-family: Arial, Helvetica;
   font-weight: bold;
   color: #8e8e8e;
@@ -59,15 +60,19 @@ footer p, footer a {
 }
 
 footer p, footer span {
+  display: flex;
   color: #6d6d6d;
 }
 
 footer span {
+  display: flex;
   font-family: Arial, Helvetica;
   font-size: 0.9em;
 }
 
 footer a {
+  font-size: 1em;
+  display: contents;
   font-weight: bold;
 }
 

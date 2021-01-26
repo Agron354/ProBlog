@@ -20,11 +20,13 @@ export function Footer() {
                     <div className='col-sm-6' style={{paddingLeft: '10%'}}>
                         <h1>Networks</h1>
                         <p>Give me a follow on <a href='https://www.linkedin.com/in/egor-borisenko/' target='_blank'>LinkedIn</a></p>
+                        <h2>CV</h2>
+                        <p>More information in my <a href='https://github.com/Agron354/CV/raw/main/egor_borisenko_cv_doc.docx'>CV</a></p>
                     </div>
                 </div>
                 <div className='row h-25 text-center'>
                     <div className='col-sm-12 d-flex justify-content-center align-items-end'>
-                        <p>Copyright © 2017 Egor Borisenko - made by egor.</p>
+                        <p>Copyright © 2021 Egor Borisenko - made by egor.</p>
                     </div>
                     <div className='col-sm-12 d-flex justify-content-center align-items-start'>
                         <span>C# | .NET | HTML5 | CSS3 | JavaScript | React | Full Stack Development</span>
