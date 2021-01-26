@@ -129,6 +129,7 @@ footer a {
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
   height: 100%;
   position: relative;
   color: rgba(255, 255, 255, 1);
