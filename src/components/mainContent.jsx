@@ -11,7 +11,7 @@ export function MainContent() {
                         <div>My commercial projects</div>
                     </div>
                 </div>
-                <div className='row justify-content-center' style={{height: '50vh'}}>
+                <div className='row justify-content-center project-collection'>
                     {
                         projectsData.map((el, index) => 
                             <ProjectItem 
@@ -24,8 +24,8 @@ export function MainContent() {
                     }
                 </div>
             </div>
-            <div className='container-fluid d-flex align-items-end' style={{height: '30%'}}>
-                <div className='row' style={{height: '70vh'}}>
+            <div className='container-fluid d-flex align-items-end justify-content-center' style={{height: '30%'}}>
+                <div className='row overview'>
                     <div className='col-sm-6 w-50 h-100 main-content-img'>
                     </div>
                     <div className='col-sm-6 w-50 h-100 ' style={{backgroundColor: '#f5f4f4', padding: '0px 6% 0 6%'}}>

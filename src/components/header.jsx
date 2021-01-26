@@ -2,8 +2,8 @@ import React from 'react';
 
 export function Header() {
     return (
-        <header className='header'>
-            <div className='container h-100'>
+        <header>
+            <div className='container-fluid'>
                 <div className='row h-50'>
                     <div className='col-sm-12 justify-content-center title first-screen-title-main'>
                         <div>Full Stack Developer.</div>

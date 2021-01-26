@@ -3,13 +3,13 @@
   src: url(./assets/fonts/Raleway-Bold.ttf);
  }
 
-body {
-  margin: 0;
+#root {
   font-family: 'Raleway-Bold', sans-serif;
   text-align: center;
 }
 
 header {
+  display: flex;
   animation-name: appearing;
   animation-duration: 1s;
   background-image: url(./assets/images/header-background.jpg);
@@ -40,10 +40,10 @@ a {
 
 footer {
   background-color: #141414;
-  height: 50vh;
   width: 100%;
   position: relative;
   z-index: 3;
+  height: 50vh;
 }
 
 footer h1, footer h2 {
@@ -85,14 +85,14 @@ footer a {
 .first-screen-title-main {
   animation-name: surfacing;
   animation-duration: 0.8s;
-  font-size: 5.5em;
+  font-size: 6.5rem;
   align-items: flex-end;
 }
 
 .first-screen-title-sub {
   animation-name: surfacing;
   animation-duration: 0.8s;
-  font-size: 1.5em;
+  font-size: 2rem;
   align-items: flex-start;
 }
 
@@ -114,6 +114,16 @@ footer a {
   color: #969696;
   font-family: Arial, Helvetica;
   font-size: 2em;
+}
+
+.project-collection {
+  height: 50vh;
+}
+
+.overview {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  height: 70vh;
 }
 
 .main-content-img {
@@ -617,4 +627,69 @@ footer a {
     background-size: 100%;
     background-image: linear-gradient(rgba(82, 140, 163, 0), rgba(82, 140, 163, 0)), url(./assets/images/vacation-management.jpg);
   }
+}
+
+@media (max-width: 1199px) {
+  header {
+    height: 50vh;
+  }
+
+  footer {
+    height: 30vh;
+  }
+
+  .main-content {
+    height: 100vh;
+    margin-top: 50vh;
+  }
+
+  .project-collection {
+    height: 28vh;
+  }
+
+  .overview {
+    height: 24vh;
+  }
+
+  .main-content-text {
+    font-size: 1.4rem;
+  }
+
+  .main-content-text-title {
+    font-size: 3.9rem;
+  }
+
+  .first-screen-title-main {
+    font-size: 5.5rem;
+  }
+
+  .second-screen-title-main {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+
 }
