@@ -9,4 +9,4 @@ import './index.css';
 
 const content = <React.StrictMode><Layout/></React.StrictMode>;
 
-ReactDOM.render(content ,document.getElementById('root'));
+ReactDOM.render(content, document.getElementById('root'));

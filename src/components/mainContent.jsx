@@ -39,7 +39,7 @@ export function MainContent() {
                             <span className="col-12 h-50 py-1 d-flex main-content-text">
                                 I am a full stack web developer based in Orsha, near Vitebsk, Belarus.
                                 I love books, travel, programming, watching sunsets at sea and 
-                                <a style={{display: "contents"}} href="https://lookslikeyouneediceland.com/"> screaming in Iceland</a>.
+                                <a href="https://lookslikeyouneediceland.com/" target="_blank" style={{display: "contents"}}> screaming in Iceland</a>.
                             </span>
                         </div>
                     </div>

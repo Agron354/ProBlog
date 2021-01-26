@@ -8,7 +8,7 @@ export function ProjectItem(props) {
             className={`col-5 col-xs-12 m-2 project-img justify-content-center ${props.imageClass}${descriptionIsVisible ? "-description" : ""}`}
             onMouseOver={() => setDescriptionVisibility(true)} 
             onMouseLeave={() => setDescriptionVisibility(false)}>
-            <div className="hidden container">
+            <div className="d-none container">
                 <div className="row">
                     <span className="col-12 py-1 d-flex justify-content-center align-items-end">{props.title}</span>
                     <span className="col-12 py-1 d-flex justify-content-center">{props.description}</span>
