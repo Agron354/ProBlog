@@ -27,7 +27,7 @@ header {
 .main-content {
   box-shadow: white 0px 0px 11px;
   background-color: #fff;
-  height: 1750px;
+  height: 1650px;
   width: 100%;
   position: relative;
   margin-top: 755px;
@@ -100,8 +100,8 @@ footer a {
   color: #ccc;
   font-size: 4rem;
   line-height: 0.8rem;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .main-content-text-title {
@@ -117,7 +117,9 @@ footer a {
 }
 
 .project-collection {
-  height: 460px;
+  height: 410px;
+  width: 1050px;
+  margin: auto;
 }
 
 .overview {
@@ -140,7 +142,6 @@ footer a {
   font-family: Arial, Helvetica;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
   height: 100%;
   position: relative;
   color: rgba(255, 255, 255, 1);

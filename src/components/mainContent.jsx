@@ -5,7 +5,7 @@ import { projectsData } from '../constants/projectsData';
 export function MainContent() {
     return (
         <div className='main-content'>
-            <div className='container' style={{height: '70%'}}>
+            <div className='container-fluid' style={{height: '70%'}}>
                 <div className='row justify-content-center title second-screen-title-main'>
                     <div className='col-sm-12'>
                         <div>My commercial projects</div>
