@@ -26,9 +26,9 @@ export function MainContent() {
             </div>
             <div className='container-fluid d-flex align-items-end justify-content-center overview-container'>
                 <div className='row overview'>
-                    <div className='col-sm-6 w-50 h-100 main-content-img'>
+                    <div className='col-sm-6 w-50 overview-img'>
                     </div>
-                    <div className='col-sm-6 w-50 h-100 d-flex align-items-center' style={{backgroundColor: '#f5f4f4', padding: '0px 6% 0 6%'}}>
+                    <div className='col-sm-6 w-50 d-flex align-items-center overview-text'>
                         <div className='row d-flex text-left'>
                             <span className='col-12 py-3 d-flex main-content-text-title'>
                             <div className='row d-flex text-left'>

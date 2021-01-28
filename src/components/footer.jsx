@@ -17,7 +17,7 @@ export function Footer() {
                             <a href='mailto:egor.gen.borisenko@gmail.com'>egor.gen.borisenko@gmail.com</a>
                         </p>
                     </div>
-                    <div className='col-sm-6' style={{paddingLeft: '10%'}}>
+                    <div className='col-sm-6 footer-second-col'>
                         <h1>Networks</h1>
                         <p>Give me a follow on <a href='https://www.linkedin.com/in/egor-borisenko/' target='_blank'>LinkedIn</a></p>
                         <h2>CV</h2>
