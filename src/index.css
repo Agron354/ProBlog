@@ -16,7 +16,7 @@ header {
   background-repeat: no-repeat;
   background-color: rgba(82, 140, 163, 0.9);
   background-size: 100%;
-  height: 100vh;
+  height: 780px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -27,10 +27,10 @@ header {
 .main-content {
   box-shadow: white 0px 0px 11px;
   background-color: #fff;
-  height: 210vh;
+  height: 1750px;
   width: 100%;
   position: relative;
-  margin-top: 100vh;
+  margin-top: 755px;
   z-index: 2;
 }
 
@@ -43,7 +43,7 @@ footer {
   width: 100%;
   position: relative;
   z-index: 3;
-  height: 50vh;
+  height: 400px;
 }
 
 footer h1, footer h2 {
@@ -56,7 +56,7 @@ footer h1, footer h2 {
 
 footer p, footer a {
   font-family: Arial, Helvetica;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 footer p, footer span {
@@ -67,11 +67,11 @@ footer p, footer span {
 footer span {
   display: flex;
   font-family: Arial, Helvetica;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 footer a {
-  font-size: 1em;
+  font-size: 1rem;
   display: contents;
   font-weight: bold;
 }
@@ -85,45 +85,45 @@ footer a {
 .first-screen-title-main {
   animation-name: surfacing;
   animation-duration: 0.8s;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   align-items: flex-end;
 }
 
 .first-screen-title-sub {
   animation-name: surfacing;
   animation-duration: 0.8s;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: flex-start;
 }
 
 .second-screen-title-main {
   color: #ccc;
-  font-size: 4em;
+  font-size: 4rem;
   line-height: 0.8rem;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 .main-content-text-title {
   color: #434343;
-  font-size: 5em;
+  font-size: 3.5rem;
   line-height: 0.9em;
 }
 
 .main-content-text {
   color: #969696;
   font-family: Arial, Helvetica;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 .project-collection {
-  height: 50vh;
+  height: 460px;
 }
 
 .overview {
   width: -webkit-fill-available;
   width: -moz-available;
-  height: 70vh;
+  height: 100%;
 }
 
 .main-content-img {
@@ -137,6 +137,7 @@ footer a {
 
 .project-img {
   display: flex;
+  font-family: Arial, Helvetica;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -631,43 +632,21 @@ footer a {
 
 @media (max-width: 1199px) {
   header {
-    height: 50vh;
-  }
-
-  footer {
-    height: 30vh;
+    height: 700px;
   }
 
   .main-content {
-    height: 100vh;
-    margin-top: 50vh;
+    height: 1600px;
+    margin-top: 700px;
   }
 
   .project-collection {
-    height: 28vh;
-  }
-
-  .overview {
-    height: 24vh;
+    height: 400px;
   }
 
   .main-content-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
-
-  .main-content-text-title {
-    font-size: 3.9rem;
-  }
-
-  .first-screen-title-main {
-    font-size: 5.5rem;
-  }
-
-  .second-screen-title-main {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-  
 }
 
 @media (max-width: 991px) {
@@ -675,7 +654,7 @@ footer a {
 }
 
 @media (max-width: 767px) {
-  
+
 }
 
 @media (max-width: 575px) {
@@ -693,3 +672,4 @@ footer a {
 @media (max-width: 320px) {
 
 }
+

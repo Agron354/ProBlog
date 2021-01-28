@@ -10,7 +10,7 @@ export function ProjectItem(props) {
             onMouseLeave={() => setDescriptionVisibility(false)}>
             <div className='d-none container'>
                 <div className='row'>
-                    <span className='col-12 py-1 d-flex justify-content-center align-items-end'>{props.title}</span>
+                    <span className='col-12 py-1 d-flex justify-content-center align-items-end font-weight-bold'>{props.title}</span>
                     <span className='col-12 py-1 d-flex justify-content-center'>{props.description}</span>
                 </div>
             </div>
