@@ -760,7 +760,7 @@ footer a {
 
 @media (max-width: 600px) { 
   .main-content {
-    height: 1200px;
+    height: 1800px;
   }
 }
 
@@ -784,9 +784,14 @@ footer a {
 }
 
 @media (max-width: 375px) {
-  
+
   header {
-    height: 200px;    
+    background-size: cover;
+    height: 200px;
+  }
+
+  .overview-img {
+    background-size: 120%;
   }
 
   .main-content {
