@@ -145,14 +145,12 @@ footer a {
   background-image: url(./assets/images/main-content-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  min-width: 390px;
   height: 100%;
   position: relative;
 }
 
 .overview-text {
   height: 100%;
-  min-width: 390px;
   background-color: #f5f4f4;
   padding: 0px 6% 0 6%;
 }
@@ -757,7 +755,14 @@ footer a {
 }
 
 @media (max-width: 575px) {
+  
+  .overview-img {
+    min-width: 100%;
+  }
 
+  .overview-text {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
