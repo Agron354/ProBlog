@@ -758,7 +758,18 @@ footer a {
   }
 }
 
+@media (max-width: 600px) { 
+  .main-content {
+    height: 1200px;
+  }
+}
+
 @media (max-width: 575px) {
+
+  .main-content {
+    height: 1850px;
+  }
+  
   .overview {
     max-height: 260px;
   }
@@ -773,6 +784,27 @@ footer a {
 }
 
 @media (max-width: 375px) {
+  
+  header {
+    height: 200px;    
+  }
+
+  .main-content {
+    margin-top: 200px;
+  }
+
+  .second-screen-title-main {
+    font-size: 1.2rem;
+  }
+
+  .first-screen-title-main {
+    font-size: 1rem;
+  }
+
+  .first-screen-title-sub {
+    font-size: 0.7rem;
+  }
+
 }
 
 @media (max-width: 360px) {

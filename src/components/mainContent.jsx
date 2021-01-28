@@ -25,7 +25,7 @@ export function MainContent() {
                 </div>
             </div>
             <div className='container-fluid d-flex align-items-end justify-content-center overview-container'>
-                <div className='row overview'>
+                <div className='row d-flex align-items-center overview'>
                     <div className='col-sm-6 w-50 overview-img'>
                     </div>
                     <div className='col-sm-6 w-50 d-flex align-items-center overview-text'>
