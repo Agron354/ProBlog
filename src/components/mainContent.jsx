@@ -5,7 +5,7 @@ import { projectsData } from '../constants/projectsData';
 export function MainContent() {
     return (
         <div className='main-content'>
-            <div className='container-fluid' style={{height: '70%'}}>
+            <div className='container-fluid project-collection-container'>
                 <div className='row justify-content-center title second-screen-title-main'>
                     <div className='col-sm-12'>
                         <div>My commercial projects</div>
@@ -24,7 +24,7 @@ export function MainContent() {
                     }
                 </div>
             </div>
-            <div className='container-fluid d-flex align-items-end justify-content-center' style={{height: '30%'}}>
+            <div className='container-fluid d-flex align-items-end justify-content-center overview-container'>
                 <div className='row overview'>
                     <div className='col-sm-6 w-50 h-100 main-content-img'>
                     </div>
