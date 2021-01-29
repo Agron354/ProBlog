@@ -144,7 +144,7 @@ footer a {
   display: flex;
   background-image: url(./assets/images/main-content-background.jpg);
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 115%;
   height: 100%;
   position: relative;
 }
@@ -704,7 +704,6 @@ footer a {
 }
 
 @media (max-width: 767px) {
-  
   header {
     height: 240px;
   }
@@ -719,7 +718,7 @@ footer a {
   }
 
   .main-content {
-    height: 1850px;
+    height: 1150px;
     margin-top: 240px;
   }
 
@@ -758,13 +757,52 @@ footer a {
   }
 }
 
-@media (max-width: 600px) { 
+
+@media handlehold and (max-width: 767px) { 
+  .main-content {
+    height: 1850px;
+  }
+}
+
+@media (max-width: 640px) { 
+  footer {
+    height: 400px;
+  }
+
   .main-content {
     height: 1800px;
+  }
+
+  .main-content-text {
+    font-size: 1.2rem;
+  }
+
+  .first-screen-title-main {
+    font-size: 2rem;
+  }
+
+  .first-screen-title-sub {
+    font-size: 0.8rem;
+  }
+
+  .second-screen-title-main {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 575px) {
+
+  footer {
+    height: 630px;
+  }
+
+  footer h1, footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-second-col {
+    padding-bottom: 20px;
+  }
 
   .main-content {
     height: 1850px;
@@ -781,13 +819,57 @@ footer a {
   .overview-text {
     min-width: 100%;
   }
+
+  .main-content-text {
+    font-size: 1.2rem;
+  }
+
+  .first-screen-title-main {
+    font-size: 2rem;
+  }
+
+  .first-screen-title-sub {
+    font-size: 0.8rem;
+  }
+
+  .second-screen-title-main {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 375px) {
 
+  html {
+    overflow-x: hidden;
+  }
+
   header {
     background-size: cover;
     height: 200px;
+  }
+
+  footer {
+    height: max-content;
+  }
+
+  footer a, footer p {
+    font-size: 0.9rem;
+  }
+
+  footer h1, footer h2 {
+    font-size: 1.2rem;
+  }
+
+  footer span {
+    font-size: 0.8rem;
+  }
+
+  .footer-second-col {
+    padding-bottom: 30px;
+  }
+
+  .main-content-text {
+    font-size: 0.9rem;
   }
 
   .overview-img {
@@ -807,7 +889,7 @@ footer a {
   }
 
   .first-screen-title-sub {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
 }
