@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ProBlog/static/css/main.07f4b449.chunk.css",
+    "main.js": "/ProBlog/static/js/main.3bfa0ffd.chunk.js",
+    "main.js.map": "/ProBlog/static/js/main.3bfa0ffd.chunk.js.map",
+    "runtime-main.js": "/ProBlog/static/js/runtime-main.e2a70ec0.js",
+    "runtime-main.js.map": "/ProBlog/static/js/runtime-main.e2a70ec0.js.map",
+    "static/css/2.150d169a.chunk.css": "/ProBlog/static/css/2.150d169a.chunk.css",
+    "static/js/2.4fa59874.chunk.js": "/ProBlog/static/js/2.4fa59874.chunk.js",
+    "static/js/2.4fa59874.chunk.js.map": "/ProBlog/static/js/2.4fa59874.chunk.js.map",
+    "index.html": "/ProBlog/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/ProBlog/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.07f4b449.chunk.css.map": "/ProBlog/static/css/main.07f4b449.chunk.css.map",
+    "static/js/2.4fa59874.chunk.js.LICENSE.txt": "/ProBlog/static/js/2.4fa59874.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ProBlog/static/media/vending.7a9b7b45.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2a70ec0.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.4fa59874.chunk.js",
+    "static/css/main.07f4b449.chunk.css",
+    "static/js/main.3bfa0ffd.chunk.js"
+  ]
+}
